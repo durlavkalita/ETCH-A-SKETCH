@@ -7,12 +7,13 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div>
-    <input type="button" onclick="clearGrid()" value="clear grid" />
-    <input value=10 type="number" class="input"/>
-    <button onclick="gridSize()">submit</button>
+  <div id="header">
+    <h1>Etch-a-Sketch</h1>
+    <input type="number" min="1" max="100" class="input" placeholder="Enter a grid size(1-100)"><br>
+    <button class="btn" onclick="clearGrid()">Clear</button>
+    <button class="btn" onclick="gridSize()">Create</button>
   </div>
-  <div class="grid-container">
+  <div id="main" class="grid-container">
 
   </div>
   <script src="script.js"></script>
